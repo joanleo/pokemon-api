@@ -39,6 +39,7 @@ body{
     height: 22rem;
     display: grid;
     grid-template-columns: 30% 70%;
+    justify-content: space-evenly;
 /*     grid-template-rows: auto auto auto;
  */}
 #title-info{
@@ -123,13 +124,25 @@ p, span{
     margin-bottom: 2rem;
 }
 @media only screen and (max-width:600px){
+    .background-image{
+        padding-top: 2rem;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .pokemon-container{
         display: flex;
         flex-direction: column;
         align-content: center;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         margin-right: 2rem;
         margin-top: 2rem;      
+    }
+    #pokemon-data{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 1.5rem;
     }
     #pokemon-data-container{
         align-items: center;
@@ -137,6 +150,7 @@ p, span{
         flex-direction: column;
         height: 28rem;
         width: 17.6rem;
+        padding-top: 2rem;
     }
     #pokemon-container{
         margin-top: 20px;
